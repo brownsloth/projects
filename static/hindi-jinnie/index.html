@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hindi Jinnie · EN → HI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <textarea
+        id="input"
+        class="box input-box"
+        rows="2"
+        placeholder="My name is not as common as other names"
+        spellcheck="false"
+      ></textarea>
+
+      <h1 class="title">translation</h1>
+
+      <label class="mode-label" for="mode">Translation mode</label>
+      <select id="mode" class="mode-select" aria-label="Translation mode">
+        <option value="fast" selected>(faster) knowledge-distilled LSTM</option>
+        <option value="accurate">(more accurate) Transformer model</option>
+      </select>
+
+      <div id="output" class="box output-box" aria-live="polite">
+        <span class="placeholder">....translating....</span>
+      </div>
+
+      <p id="meta" class="meta" hidden></p>
+      <p class="disclaimer">
+        Trained on the public OPUS-100 (en–hi) dataset — quality is still rough,
+        especially the knowledge-distilled LSTM — but we’re improving; treat this
+        as fun and see what you get.
+      </p>
+    </main>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
