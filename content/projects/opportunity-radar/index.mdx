@@ -1,0 +1,29 @@
+---
+title: "Opportunity Radar — AI Product Scouting Pipeline"
+shortTitle: "Opportunity Radar"
+category: "Agents · Discovery"
+color: "#161b22"
+cover: "./cover.png"
+date: "2025-06-22"
+---
+
+Daily **business-problem discovery** system: market signals → pain extraction → research evidence → ranked buildable AI/ML product briefs.
+
+## Philosophy
+
+```text
+market pain → use case → capability → papers → MVP
+```
+
+Not paper-chasing backwards.
+
+## Progress
+
+- Collectors (HN, RSS, GDELT, arXiv, OpenAlex, GitHub)
+- SQLite pipeline with relevance gates and evidence scoring
+- Phase 2: reproduction inspection + Prototype Factory (auto-generated repos)
+- 30+ pytest tests
+
+## Stack
+
+Python · Typer · httpx · SQLite · OpenAI/Anthropic/Gemini

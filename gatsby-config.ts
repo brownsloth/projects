@@ -5,29 +5,27 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.mjs
-    siteTitle: `Jodie`,
-    siteTitleAlt: `Jodie - Gatsby Starter Portfolio`,
-    siteHeadline: `Jodie - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://jodie.lekoarts.de`,
-    siteDescription: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+    siteTitle: `Tarun Sharma`,
+    siteTitleAlt: `Tarun Sharma — AI Transformation Consultant`,
+    siteHeadline: `Independent consultant for teams building production AI — evaluation, RAG, and agentic systems`,
+    siteUrl: `https://projects.tarun-ssharma.com`,
+    siteDescription: `Independent AI/ML consultant. Rigorous evaluation, production RAG, agentic workflows, and deployable proof — for teams who need transformation, not theater.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `Tarun Sharma`,
   },
   trailingSlash: `always`,
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-jodie`,
-      // See the theme's README for all available options
       options: {
         navigation: [
           { name: `Projects`, slug: `/projects` },
-          { name: `Art`, slug: `/art` },
-          { name: `About`, slug: `/about` },
+          { name: `Approach`, slug: `/approach` },
+          { name: `Contact`, slug: `/contact` },
         ],
+        homepagePageLimit: 0,
+        homepageProjectLimit: 12,
       },
     },
     {
@@ -39,14 +37,12 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `jodie - @lekoarts/gatsby-theme-jodie`,
-        short_name: `jodie`,
-        description: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+        name: `Tarun Sharma — AI Transformation Consultant`,
+        short_name: `Tarun Sharma`,
+        description: `Independent AI/ML consultant. Rigorous evaluation, production RAG, agentic workflows, and deployable proof.`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#b75e09`,
+        background_color: `#0c0c0b`,
+        theme_color: `#e07a2f`,
         display: `standalone`,
         icons: [
           {
@@ -62,7 +58,6 @@ const config: GatsbyConfig = {
         ],
       },
     },
-    // You can remove this plugin if you don't need it
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-statoscope`,
       options: {

@@ -1,0 +1,21 @@
+---
+title: "ModelBench — Embedding & Reranker Tracker"
+shortTitle: "ModelBench"
+category: "RAG · Benchmarks"
+color: "#161b22"
+cover: "./cover.png"
+date: "2025-06-02"
+---
+
+Personal **model update tracker + benchmark suite** for embeddings and rerankers on a private consultancy RAG eval set — with honest verdicts and auto-drafted LinkedIn posts.
+
+## What it does
+
+- Registry of new HF embedding/reranker releases
+- MTEB sync + custom `consultancy_retrieval_sweep` (dense + BM25 + RRF)
+- Compare runs and draft-post CLI
+- Colab/RunPod bundles for remote sweeps
+
+## Stack
+
+sentence-transformers · MTEB · BM25 · HuggingFace Hub · Typer

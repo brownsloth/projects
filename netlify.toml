@@ -1,0 +1,34 @@
+# Netlify runs `npm run build` on each push and publishes the `public/` folder.
+# The `public/` directory is gitignored — do not commit built files.
+
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# Gatsby client-side routes + trailing slashes
+[[redirects]]
+  from = "/quote-memory"
+  to = "/quote-memory/"
+  status = 301
+
+[[redirects]]
+  from = "/hindi-jinnie"
+  to = "/hindi-jinnie/"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/approach/"
+  status = 301
+
+[[redirects]]
+  from = "/about/"
+  to = "/approach/"
+  status = 301
+
+# Contact form → enable email notifications in Netlify:
+# Site settings → Forms → Form notifications → Add notification → 1starun8.research@gmail.com
