@@ -15,8 +15,8 @@ const DEMO_BY_SLUG: Record<string, string> = {
   "/quote-memory-fuzzy-subtitle-search-across-tv-shows/": `/quote-memory/`,
   "/hindi-jinnie-english-to-hindi-translation": `/hindi-jinnie/`,
   "/hindi-jinnie-english-to-hindi-translation/": `/hindi-jinnie/`,
-  "/paperlens-pdf-highlight-annotate": `/paperlens/`,
-  "/paperlens-pdf-highlight-annotate/": `/paperlens/`,
+  "/paper-lens-pdf-highlight-annotate": `/paperlens/`,
+  "/paper-lens-pdf-highlight-annotate/": `/paperlens/`,
 }
 
 const PILLARS = [
