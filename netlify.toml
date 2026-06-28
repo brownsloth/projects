@@ -21,6 +21,11 @@
   status = 301
 
 [[redirects]]
+  from = "/paperlens"
+  to = "/paperlens/"
+  status = 301
+
+[[redirects]]
   from = "/about"
   to = "/approach/"
   status = 301
@@ -30,5 +35,6 @@
   to = "/approach/"
   status = 301
 
-# Contact form → enable email notifications in Netlify:
-# Site settings → Forms → Form notifications → Add notification → 1starun8.research@gmail.com
+# Contact form → enable email notifications in Netlify (NOT under Forms → Usage):
+# Project configuration → Notifications → Emails and webhooks → Form submission notifications → Add notification
+# Or legacy path: Site configuration → Notifications → Form submission notifications

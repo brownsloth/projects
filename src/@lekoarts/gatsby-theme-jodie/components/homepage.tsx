@@ -15,6 +15,8 @@ const DEMO_BY_SLUG: Record<string, string> = {
   "/quote-memory-fuzzy-subtitle-search-across-tv-shows/": `/quote-memory/`,
   "/hindi-jinnie-english-to-hindi-translation": `/hindi-jinnie/`,
   "/hindi-jinnie-english-to-hindi-translation/": `/hindi-jinnie/`,
+  "/paperlens-pdf-highlight-annotate": `/paperlens/`,
+  "/paperlens-pdf-highlight-annotate/": `/paperlens/`,
 }
 
 const PILLARS = [
@@ -125,6 +127,7 @@ const Homepage: React.FC<PageProps<JodieHomepageProps>> = ({ data: { pages, proj
         </span>
         <a href="/quote-memory/">Quote Memory</a>
         <a href="/hindi-jinnie/">Hindi Jinnie Translation</a>
+        <a href="/paperlens/">PaperLens</a>
       </div>
 
       <section className="cta-band">

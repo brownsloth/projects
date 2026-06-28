@@ -571,6 +571,18 @@ body::before {
   cursor: pointer;
 }
 
+.contact-form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.contact-form__mailto {
+  font-size: 0.7rem;
+  padding: 0.75rem 1.1rem;
+}
+
 .contact-form__submit:disabled {
   opacity: 0.6;
   cursor: wait;
